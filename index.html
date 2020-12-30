@@ -4,7 +4,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Eduardo Venegas Rivera">
+  <meta name="description" content="Batatabit es un proyecto del curso Mobile First de Platzi.">
+
   <title>Batatabit</title>
+  <link rel="icon" type="img/svg" href="./assets/icons/batata.svg">
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500;900&display=swap"
     rel="stylesheet" />
@@ -146,10 +150,10 @@
       <div class="plans-container--slider">
         <div class="plans-container--card">
           <div class="plan-card">
-            <h3 class="plan-card--title">Pago Anual</h3>
-            <p class="plan-card--price"><span>$</span> 99</p>
+            <h3 class="plan-card--title">Plan Básico</h3>
+            <p class="plan-card--price"><span>$</span> 10</p>
             <p class="plan-card--saving">
-              *Ahorras $129 comparado el plan mensual.
+              * La mejor manera de empezar.
             </p>
             <button class="plan-card--ca">Escoger este <span></span></button>
           </div>
@@ -157,20 +161,20 @@
         <div class="plans-container--card">
           <p class="recommended">Recomendado</p>
           <div class="plan-card">
-            <h3 class="plan-card--title">Pago Anual</h3>
+            <h3 class="plan-card--title">Plan Expert</h3>
             <p class="plan-card--price"><span>$</span> 99</p>
             <p class="plan-card--saving">
-              *Ahorras $129 comparado el plan mensual.
+              * Ahorras $21 vs el plan básico.
             </p>
             <button class="plan-card--ca">Escoger este <span></span></button>
           </div>
         </div>
         <div class="plans-container--card">
           <div class="plan-card">
-            <h3 class="plan-card--title">Pago Anual</h3>
-            <p class="plan-card--price"><span>$</span> 99</p>
+            <h3 class="plan-card--title">Plan Premium</h3>
+            <p class="plan-card--price"><span>$</span> 150</p>
             <p class="plan-card--saving">
-              *Ahorras $129 comparado el plan mensual.
+              * Acceso exclusivo a la información.
             </p>
             <button class="plan-card--ca">Escoger este <span></span></button>
           </div>
@@ -189,22 +193,22 @@
     <section class="right">
       <img src="./assets/img/logo-footer.svg" alt="Logo de Batatabit 2020" />
     </section>
+    <section class="credit">
+      <p>Diseñado por: <a href="https://platzi.com">Platzi,</a> y Desarrollado por: <a
+          href="https://eduardovr.com">Eduardo Venegas</a></p>
+    </section>
   </footer>
 
   <script>
-
-document.onkeypress = function(e){
-  e = e || window.event;
-  if(e.keyCode === 65 ){
-    document.documentElement.classList.toggle('dark-mode');
-    document.querySelectorAll('.invert').forEach((result) => {
-    result.classList.toggle('inverted');
-  })
-  }
-
- 
-}
-
+    document.onkeypress = function (e) {
+      e = e || window.event;
+      if (e.keyCode === 65) {
+        document.documentElement.classList.toggle('dark-mode');
+        document.querySelectorAll('.invert').forEach((result) => {
+          result.classList.toggle('inverted');
+        })
+      }
+    }
   </script>
 </body>
 
